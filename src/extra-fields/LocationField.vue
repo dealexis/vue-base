@@ -31,9 +31,14 @@
   import FieldMixin from '../mixins/FieldMixin';
   import defaults from 'lodash-es/defaults';
   import { loadGoogleMaps } from '../utils/google-maps';
+  import VueGoogleAutocomplete from 'vue-google-autocomplete'
 
   export default {
     name: 'FormLocationField',
+
+    components: {
+      VueGoogleAutocomplete
+    },
 
     mixins: [FieldMixin],
 
