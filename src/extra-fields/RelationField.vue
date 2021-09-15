@@ -56,10 +56,15 @@
   import uniqBy from 'lodash-es/uniqBy';
   import get from 'lodash-es/get';
   import FieldMixin from '../mixins/FieldMixin';
+  import VueSelect from 'vue-select'
 
   export default {
 
     mixins: [FieldMixin],
+
+    components: {
+      VueSelect
+    },
 
     data() {
       return {
